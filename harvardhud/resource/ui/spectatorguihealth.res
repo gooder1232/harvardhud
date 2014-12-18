@@ -4,13 +4,13 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImage"
-		"xpos"			"-90"
-		"ypos"			"0"
+		"xpos"			"9999"
+		"ypos"			"9999"
 		"zpos"			"4"
-		"wide"			"200"
+		"wide"			"18"
 		"tall"			"18"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 	}		
 	"PlayerStatusHealthImageBG"
@@ -63,7 +63,7 @@
 		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"32"
-		"tall"			"18"
+		"tall"			"20"
 		"visible"		"1"
 		"enabled"		"1"
 		"font"			"FontBold20"
@@ -85,7 +85,7 @@
 		"textAlignment"	"center"	
 		"font"			"ScoreboardVerySmall"
 		"fgcolor"		"TFOrange"
-	}
+	}	
 	"HealthNormal"
 	{
 		"ControlName"	"ImagePanel"
@@ -94,7 +94,7 @@
 		"ypos"			"0"	[$WIN32]
 		"zpos"			"-11"
 		"wide"			"32"
-		"tall"			"18"
+		"tall"			"20"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"		"replay/thumbnails/bg_black"
@@ -107,23 +107,24 @@
 		"ypos"			"0"	[$WIN32]
 		"zpos"			"5"
 		"wide"			"32"
-		"tall"			"18"
+		"tall"			"20"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"		"replay/thumbnails/bg_blue"
 		"alpha"		"0"
-	}	
-	"BGCover"
+	}		
+	"HealthHurt"
 	{
 		"ControlName"	"ImagePanel"
-		"fieldName"		"BGCover"
+		"fieldName"		"HealthHurt"
 		"xpos"			"0"
 		"ypos"			"0"	[$WIN32]
-		"zpos"			"6"
+		"zpos"			"5"
 		"wide"			"32"
-		"tall"			"18"
+		"tall"			"20"
 		"visible"		"1"
 		"enabled"		"1"
-		"fillcolor"		"0 0 0 100"
-	}		
+		"image"		"replay/thumbnails/bg_red"
+		"alpha"		"0"
+	}	
 }

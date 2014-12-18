@@ -1,5 +1,5 @@
 "Resource/UI/HudPlayerHealth.res"
-{	
+{
 	// player health data
 	"HudPlayerHealth"
 	{
@@ -7,15 +7,15 @@
 		"fieldName"		"HudPlayerHealth"
 		"xpos"			"0"		[$WIN32]
 		"ypos"			"0"	[$WIN32]
-		"zpos"			"2"
+		"zpos"			"3"
 		"wide"			"f0"
 		"tall"			"480"
 		"visible"		"1"
-		"enabled"		"1"	
+		"enabled"		"1"
 		"HealthBonusPosAdj"	"35"
 		"HealthDeathWarning"	"0.49"
 		"HealthDeathWarningColor"	"255 0 0 255"
-	}	
+	}
 	"PlayerStatusHealthImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -27,8 +27,8 @@
 		"tall"			"41"
 		"visible"		"0"
 		"enabled"		"0"
-		"scaleImage"	"1"	
-	}		
+		"scaleImage"	"1"
+	}
 	"PlayerStatusHealthImageBG"
 	{
 		"ControlName"	"ImagePanel"
@@ -41,19 +41,21 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/health_bg"
-		"scaleImage"	"1"	
-	}	
+		"scaleImage"	"1"
+	}
 	"PlayerStatusHealthBonusImage"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthBonusImage"
-		"xpos"			"9999"	[$WIN32]
-		"ypos"			"33"	[$WIN32]
-		"zpos"			"2"
-		"wide"			"55"	[$WIN32]
-		"tall"			"55"	[$WIN32]
+		"xpos"			"c-174"	[$WIN32]
+		"xpos_minmode"	"9999"
+		"ypos"			"r166"	[$WIN32]
+		"zpos"			"0"
+		"wide"			"78"	[$WIN32]
+		"tall"			"78"	[$WIN32]
 		"visible"		"0"
-		"enabled"		"0"
+		"enabled"		"1"
+		"enabled_minmode"	"0"
 		"image"			"../hud/health_over_bg"
 		"scaleImage"	"1"	
 	}
@@ -61,46 +63,73 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"c-200"
+		"xpos"			"c-170"
+		"xpos_minmode"		"44"
 		"ypos"			"r150"	[$WIN32]
+		"ypos_minmode"		"r35"
 		"zpos"			"5"
-		"wide"			"100"
+		"wide"			"70"
 		"tall"			"48"
+		"tall_minmode"		"35"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%Health%"
-		"textAlignment"	"east"	
+		"textAlignment"	"center"
+		"textAlignment_minmode"	"east"
 		"font"			"FontBold48"
+		"font_minmode"	"FontBold36"
 		"fgcolor"		"healthnormal"
-	}	
+	}
+	"HealthNormal"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"HealthNormal"
+		"xpos"			"9999"
+		"xpos_minmode"		"0"
+		"ypos"			"9999"	[$WIN32]
+		"ypos_minmode"		"r35"
+		"zpos"			"4"
+		"wide"			"0"
+		"wide_minmode"			"150"
+		"tall"			"37"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"		"replay/thumbnails/bg_grey"
+	}
 	"HealthBuff"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"HealthBuff"
 		"xpos"			"c-198"
+		"xpos_minmode"		"0"
 		"ypos"			"r145"	[$WIN32]
+		"ypos_minmode"		"r35"
 		"zpos"			"5"
 		"wide"			"100"
+		"wide_minmode"			"150"
 		"tall"			"37"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"image"		"replay/thumbnails/bg_blue"
 		"alpha"		"0"
-	}	
+	}
 	"HealthHurt"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"HealthHurt"
 		"xpos"			"c-198"
+		"xpos_minmode"		"0"
 		"ypos"			"r145"	[$WIN32]
+		"ypos_minmode"		"r35"
 		"zpos"			"5"
 		"wide"			"100"
+		"wide_minmode"			"150"
 		"tall"			"37"
-		"visible"		"1"
+		"visible"		"0"
 		"enabled"		"1"
 		"image"		"replay/thumbnails/bg_red"
 		"alpha"		"0"
-	}		
+	}
 	"PlayerStatusBleedImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -112,10 +141,10 @@
 		"tall"			"32"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../vgui/bleed_drop"
 		"fgcolor"		"TanDark"
-	}		
+	}
 	"PlayerStatusMilkImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -127,7 +156,7 @@
 		"tall"			"32"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../vgui/bleed_drop"
 		"fgcolor"		"TanDark"
 	}
@@ -142,7 +171,7 @@
 		"tall"			"32"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../vgui/marked_for_death"
 		"fgcolor"		"TanDark"
 	}
@@ -157,7 +186,7 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../vgui/marked_for_death"
 		"fgcolor"		"TanDark"
 	}
@@ -172,7 +201,7 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../HUD/defense_buff_bullet_blue"
 		"fgcolor"		"TanDark"
 	}
@@ -187,7 +216,7 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../HUD/defense_buff_explosion_blue"
 		"fgcolor"		"TanDark"
 	}
@@ -202,7 +231,7 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../HUD/defense_buff_fire_blue"
 		"fgcolor"		"TanDark"
 	}
@@ -218,7 +247,7 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../HUD/defense_buff_bullet_blue"
 		"fgcolor"		"TanDark"
 	}
@@ -233,7 +262,7 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../HUD/defense_buff_explosion_blue"
 		"fgcolor"		"TanDark"
 	}
@@ -248,11 +277,11 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../HUD/defense_buff_fire_blue"
 		"fgcolor"		"TanDark"
 	}
-	
+
 
 	"PlayerStatus_WheelOfDoom"
 	{
@@ -265,7 +294,7 @@
 		"tall"			"32"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../signs/death_wheel_whammy"
 		"fgcolor"		"TanDark"
 	}
@@ -281,7 +310,7 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../HUD/defense_buff_bullet_blue"
 		"fgcolor"		"TanDark"
 	}
@@ -297,7 +326,7 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../HUD/defense_buff_bullet_blue"
 		"fgcolor"		"TanDark"
 	}
@@ -313,7 +342,7 @@
 		"tall"			"31"
 		"visible"		"1"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			"../HUD/defense_buff_bullet_blue"
 		"fgcolor"		"TanDark"
 	}
@@ -328,7 +357,7 @@
 		"tall"			"31"
 		"visible"		"0"
 		"enabled"		"1"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"image"			""
 		"fgcolor"		"TanDark"
 	}

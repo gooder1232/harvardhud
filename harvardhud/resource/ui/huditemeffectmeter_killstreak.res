@@ -12,7 +12,7 @@
 		"MeterFG"		"White"
 		"MeterBG"		"Gray"
 	}
-	
+
 	"ItemEffectMeterBG"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -25,11 +25,11 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/misc_ammo_area_blue"
-		"scaleImage"	"1"	
+		"scaleImage"	"1"
 		"teambg_2"		"../hud/misc_ammo_area_red"
 		"teambg_3"		"../hud/misc_ammo_area_blue"
 	}
-	
+
 	"ItemEffectMeterLabel"
 	{
 		"ControlName"			"CExLabel"
@@ -50,13 +50,15 @@
 		"brighttext"			"0"
 		"font"					"TFFontSmall"
 	}
-	
+
 	"StreakIcon"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"StreakIcon"
-		"xpos"			"c127"
-		"ypos"			"r105"
+		"xpos"			"r100"
+		"xpos_minmode"	"r100"
+		"ypos"			"r17"
+		"ypos_minmode" "r52"
 		"zpos"			"12"
 		"wide"			"16"
 		"tall"			"16"
@@ -65,23 +67,27 @@
 		"image"			"../hud/leaderboard_streak"
 		"scaleImage"	"1"
 	}
-	
+
 	"StreakBG"
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"StreakBG"
-		"xpos"			"c130"
-		"ypos"			"r102"
+		"xpos"			"r100"
+		"xpos_minmode" "r100"
+		"ypos"			"r16"
+		"ypos_minmode" "r51"
 		"zpos"			"12"
-		"wide"			"10"
-		"tall"			"10"
+		"wide"			"100"
+		"wide_minmode" "100"
+		"tall"			"14"
+		"tall_minmode" "14"
 		"visible"		"1"
 		"enabled"		"1"
-		"fillcolor"			"huddarkgrey"
+		"image"			"replay/thumbnails/bg_grey"
 	}
 
 	"ItemEffectMeter"
-	{	
+	{
 		"ControlName"			"ContinuousProgressBar"
 		"fieldName"				"ItemEffectMeter"
 		"font"					"Default"
@@ -89,7 +95,7 @@
 		"ypos"					"9999"
 		"zpos"					"2"
 		"wide"					"0"
-		"tall"					"0"				
+		"tall"					"0"
 		"autoResize"			"0"
 		"pinCorner"				"0"
 		"visible"				"0"
@@ -97,26 +103,31 @@
 		"textAlignment"			"Left"
 		"dulltext"				"0"
 		"brighttext"			"0"
-	}					
-	
+	}
+
 	"ItemEffectMeterCount"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"ItemEffectMeterCount"
-		"xpos"					"c147"
-		"ypos"					"r105"
-		"zpos"					"2"
+		"xpos"					"r53"
+		"xpos_minmode" "r53"
+		"ypos"					"r16"
+		"ypos_minmode"  "r51"
+		"zpos"					"20"
 		"wide"					"50"
-		"tall"					"16"	
+		"tall"					"14"
+		"tall_minmode"  "14"
 		"pinCorner"				"2"
 		"visible"				"1"
 		"enabled"				"1"
 		"tabPosition"			"0"
 		"labelText"				"%progresscount%"
-		"textAlignment"			"west"
+		"textAlignment"			"east"
+		"textAlignment_minmode"   "east"
 		"dulltext"				"0"
 		"brighttext"			"0"
-		"font"					"FontBold20"
-		"fgcolor_override"		"healthnormal"
+		"font"					"FontBold16"
+		"font_minmode"	"FontBold16"
+		"fgcolor_override"		"hudwhite"
 	}
 }

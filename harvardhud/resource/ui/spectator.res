@@ -60,16 +60,16 @@
 		"ControlName"		"CExLabel"
 		"fieldName"		"ReinforcementsLabel"
 		"xpos"			"r600"	[$WIN32]
-		"ypos"			"10"	[$WIN32]
+		"ypos"			"30"	[$WIN32]
 		"wide"			"600"	[$WIN32]
-		"tall"			"18"
+		"tall"			"20"
 		"autoResize"		"0"
 		"pinCorner"		"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"#game_respawntime_in_secs"
 		"textAlignment"		"east"
-		"font"			"FontBold16"
+		"font"			"FontBold20"
 		"fgcolor_override"	"hudwhite"
 	}
 	"BuyBackLabel"

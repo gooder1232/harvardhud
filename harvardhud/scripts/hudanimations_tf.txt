@@ -206,8 +206,9 @@ event HudHealthBonusPulse
 {
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.2
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.2 0.4
-	Animate HealthBuff		Alpha		"255"	Linear 0.0 0.075
-	Animate HealthBuff		Alpha		"105"	Linear 0.125 0.075
+	//Animate HealthBuff		Alpha		"255"	Linear 0.0 0.075
+	//Animate HealthBuff		Alpha		"105"	Linear 0.125 0.075
+	Animate HealthBuff		Alpha		"255"	Linear 0.0 0.0
 	Animate HarvardxHair	FgColor		"0 0 255 255" Linear 0.0 0.0
 
 	RunEvent HudHealthBonusPulseLoop	0.25
@@ -236,8 +237,9 @@ event HudHealthDyingPulse
 {
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.075
 	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.075
-	Animate HealthHurt		Alpha		"255"	Linear 0.0 0.075
-	Animate HealthHurt		Alpha		"105"	Linear 0.125 0.075
+	//Animate HealthHurt		Alpha		"255"	Linear 0.0 0.075
+	//Animate HealthHurt		Alpha		"105"	Linear 0.125 0.075
+	Animate HealthHurt		Alpha		"255"	Linear 0.0 0.0
 	Animate HarvardxHair	FgColor		"255 0 0 255" Linear 0.0 0.0
 	
 	RunEvent HudHealthDyingPulseLoop	0.25
@@ -263,8 +265,9 @@ event HudLowAmmoPulse
 {
 	Animate	HudWeaponLowAmmoImage		Alpha		"255"		Linear 0.0 0.075
 	Animate	HudWeaponLowAmmoImage		Alpha		"0"			Linear 0.125 0.075
-	Animate AmmoLow		Alpha		"255"	Linear 0.0 0.075
-	Animate AmmoLow		Alpha		"105"	Linear 0.125 0.075
+	//Animate AmmoLow		Alpha		"255"	Linear 0.0 0.075
+	//Animate AmmoLow		Alpha		"105"	Linear 0.125 0.075
+	Animate AmmoLow		Alpha		"255"	Linear 0.0 0.0
 	
 	RunEvent HudLowAmmoPulseLoop	0.25
 }

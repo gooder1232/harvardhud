@@ -9,43 +9,44 @@
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"enabled"		"1"
-				
-		"team1_player_base_offset_x"		"-75"
-		"team1_player_base_y"				"0"
-		"team1_player_delta_x"				"-47"
-		"team1_player_delta_y"				"0"
-		"team2_player_base_offset_x"		"25"
-		"team2_player_base_y"				"0"
-		"team2_player_delta_x"				"47"
-		"team2_player_delta_y"				"0"
+
+		"team1_player_base_offset_x"		"0"
+		"team1_player_base_y"				"200"   
+		"team1_player_delta_x"				"0"
+		"team1_player_delta_y"				"-22"
 		
+		"team2_player_base_offset_x"		"0"
+		"team2_player_base_y"				"252"   
+		"team2_player_delta_x"				"0"
+		"team2_player_delta_y"				"22"
+
 		"playerpanels_kv"
 		{
 			"visible"		"0"
-			"wide"			"50"
-			"tall"			"33"
+			"wide"			"167"
+			"tall"			"20"
 			"zpos"			"1"
-			
+
 			"color_ready"	"0 255 0 220"
 			"color_notready"	"0 0 0 220"
-										  			
+
 			"playername"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"playername"
-				"font"			"DefaultVerySmall"
-				"xpos"			"5"
-				"ypos"			"24"
-				"zpos"			"5"
-				"wide"			"50"
-				"tall"			"8"
+				"font"			"FontBold10"
+				"xpos"			"30"
+				"ypos"			"0"
+				"zpos"			"50"
+				"wide"			"100"
+				"tall"			"10"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"labelText"		"%playername%"
-				"textAlignment"	"north-west"
-				//"fgcolor"		"235 226 202 255"
-					
+				"textAlignment"	"center"
+				"fgcolor"		"hudwhite"
+
 				if_mvm
 				{
 					"xpos"				"0"
@@ -55,21 +56,49 @@
 					"font"				"PlayerPanelPlayerName"
 				}
 			}
-			
+
+			"BGCover"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"BGCover"
+				"xpos"			"30"
+				"ypos"			"0"	[$WIN32]
+				"zpos"			"-1"
+				"wide"			"100"
+				"tall"			"20"
+				"visible"		"1"
+				"enabled"		"1"
+				"fillcolor"		"huddarkgrey"
+			}
+
+			"BGCover2"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"BGCover2"
+				"xpos"			"30"
+				"ypos"			"10"	[$WIN32]
+				"zpos"			"2"
+				"wide"			"100"
+				"tall"			"10"
+				"visible"		"0"
+				"enabled"		"1"
+				"fillcolor"		"hudblack"
+			}
+
 			"classimage"
 			{
 				"ControlName"	"CTFClassImage"
 				"fieldName"		"classimage"
-				"xpos"			"2"
-				"ypos"			"2"
+				"xpos"			"5"
+				"ypos"			"4"
 				"zpos"			"2"
-				"wide"			"22"
-				"tall"			"22"
+				"wide"			"16"
+				"tall"			"16"
 				"visible"		"1"
 				"enabled"		"1"
 				"image"			"../hud/class_scoutred"
-				"scaleImage"	"1"	
-				
+				"scaleImage"	"1"
+
 				if_mvm
 				{
 					"xpos"			"5"
@@ -79,45 +108,45 @@
 					"image"			"../vgui/hud_connecting"
 				}
 			}
-			
+
 			"classimagebg"
 			{
 				"ControlName"		"Panel"
 				"fieldName"		"classimagebg"
-				"xpos"			"5"
-				"ypos"			"4"
+				"xpos"			"9999"
+				"ypos"			"9999"
 				"zpos"			"2"
-				"wide"			"20"
-				"tall"			"20"
+				"wide"			"0"
+				"tall"			"0"
 				"visible"		"0"
 				"enabled"		"1"
 				"bgcolor_override"		"Black"
 				"PaintBackgroundType"	"0"
-				
+
 				if_mvm
 				{
 					"visible"		"1"
 				}
 			}
-			
+
 			"HealthIcon"
 			{
 				"ControlName"		"EditablePanel"
 				"fieldName"			"HealthIcon"
-				"xpos"				"22"
-				"ypos"				"-3"
+				"xpos"				"135"
+				"ypos"				"0"
 				"zpos"				"3"
 				"wide"				"32"
-				"tall"				"32"
+				"tall"				"20"
 				"visible"			"1"
-				"enabled"			"1"	
+				"enabled"			"1"
 				"HealthBonusPosAdj"	"10"
 				"HealthDeathWarning"		"0.49"
 				"TFFont"					"HudFontSmallest"
 				"HealthDeathWarningColor"	"HUDDeathWarning"
 				"TextColor"					"HudOffWhite"
 			}
-			
+
 			"ReadyBG"
 			{
 				"ControlName"		"ScalableImagePanel"
@@ -135,16 +164,16 @@
 
 				"src_corner_height"	"22"				// pixels inside the image
 				"src_corner_width"	"22"
-			
+
 				"draw_corner_width"	"3"				// screen size of the corners ( and sides ), proportional
 				"draw_corner_height" 	"3"
-				
+
 				if_mvm
 				{
 					"visible"		"1"
-				}	
+				}
 			}
-			
+
 			"ReadyImage"
 			{
 				"ControlName"		"ImagePanel"
@@ -166,82 +195,153 @@
 					"visible"		"1"
 				}
 			}
-			
+
 			"respawntime"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"respawntime"
-				"font"			"DefaultSmall"
-				"xpos"			"30"
-				"ypos"			"18"
-				"zpos"			"5"
-				"wide"			"23"
-				"tall"			"10"
+				"font"			"FontBold12"
+				"xpos"			"135"
+				"ypos"			"0"
+				"zpos"			"51"
+				"wide"			"32"
+				"tall"			"20"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"labelText"		"%respawntime%"
-				"textAlignment"	"west"
-				//"fgcolor"		"235 226 202 255"
-				
+				"textAlignment"	"center"
+				"fgcolor"		"hudyellow"
+
 				if_mvm
 				{
 					"ypos"			"17"
 				}
 			}
-			
+
 			"chargeamount"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"chargeamount"
-				"font"			"DefaultSmall"
-				"xpos"			"25"
-				"ypos"			"17"
+				"font"			"Font10"
+				"xpos"			"30"
+				"ypos"			"10"
 				"zpos"			"6"
-				"wide"			"25"
-				"tall"			"15"
+				"wide"			"100"
+				"tall"			"10"
 				"autoResize"	"0"
 				"pinCorner"		"0"
 				"visible"		"1"
 				"labelText"		"%chargeamount%"
-				"textAlignment"	"north"
-				"fgcolor"		"0 255 0 255"
+				"textAlignment"	"center"
+				"fgcolor"		"hudgreen"
 			}
 			
+			"healthcover"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"healthcover"
+				"font"			"Blocks48"
+				"xpos"			"135"
+				"ypos"			"0"
+				"zpos"			"50"
+				"wide"			"32"
+				"tall"			"23"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"1"
+				"labelText"		"%respawntime%"
+				"textAlignment"	"west"
+				"fgcolor"		"hudblack"
+				
+			}
+			
+			"healthcover2"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"healthcover2"
+				"font"			"Blocks48"
+				"xpos"			"30"
+				"ypos"			"0"
+				"zpos"			"49"
+				"wide"			"40"
+				"tall"			"23"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"1"
+				"labelText"		"%respawntime%"
+				"textAlignment"	"west"
+				"fgcolor"		"hudblack"
+			}
+			"healthcover3"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"healthcover3"
+				"font"			"Blocks48"
+				"xpos"			"70"
+				"ypos"			"0"
+				"zpos"			"49"
+				"wide"			"40"
+				"tall"			"23"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"1"
+				"labelText"		"%respawntime%"
+				"textAlignment"	"west"
+				"fgcolor"		"hudblack"
+			}
+			"healthcover4"
+			{
+				"ControlName"	"CExLabel"
+				"fieldName"		"healthcover4"
+				"font"			"Blocks48"
+				"xpos"			"110"
+				"ypos"			"0"
+				"zpos"			"49"
+				"wide"			"40"
+				"tall"			"23"
+				"autoResize"	"0"
+				"pinCorner"		"0"
+				"visible"		"1"
+				"labelText"		"%respawntime%"
+				"textAlignment"	"west"
+				"fgcolor"		"hudblack"
+			}
+
 			"specindex"
 			{
 				"ControlName"	"CExLabel"
 				"fieldName"		"specindex"
 				"font"			"DefaultVerySmall"
-				"xpos"			"4"
-				"ypos"			"2"
+				"xpos"			"9999"
+				"ypos"			"9999"
 				"zpos"			"5"
-				"wide"			"50"
-				"tall"			"8"
+				"wide"			"0"
+				"tall"			"0"
 				"autoResize"	"0"
 				"pinCorner"		"0"
-				"visible"		"1"
+				"visible"		"0"
 				"labelText"		"%specindex%"
 				"textAlignment"	"north-west"
 				//"fgcolor"		"235 226 202 255"
 			}
-			
+
 			if_mvm
 			{
 				"wide"		"55"
 				"tall"		"35"
 			}
 		}
-		
+
 		if_mvm
 		{
 			"xpos"					"c-250"
 			"ypos"					"6"
 			"wide"					"500"
 			"tall"					"180"
-	
+
 			"team1_player_delta_x"			"52"
-		}		
+		}
 	}
 
 	"topbar"
@@ -282,7 +382,7 @@
 		"textAlignment"		"east"
 		"font"			"FontBold16"
 		"fgcolor_override" "hudwhite"
-		
+
 		if_mvm
 		{
 			"xpos"			"c-190"
@@ -308,11 +408,11 @@
 		"font"			"HudFontSmall"
 		"wrap"			"1"
 		"centerwrap"	"1"
-	
+
 		if_mvm
 		{
 			"visible"		"1"
-		}	
+		}
 	}
 	"MapLabel"
 	{
@@ -331,7 +431,7 @@
 		"ControlName"		"CExLabel"
 		"fieldName"		"SwitchCamModeKeyLabel"
 		"visible"		"0"
-		
+
 	}
 	"SwitchCamModeLabel"
 	{
@@ -381,30 +481,30 @@
 		"visible"		"0"
 		"bgcolor_override"		"255 255 255 0"
 		"PaintBackgroundType"	"0"
-		
+
 		"model_xpos"		"10"
 		"model_center_y"	"1"
 		"model_wide"		"90"
 		"model_tall"		"55"
-		
+
 		"text_xpos"		"90"
 		"text_wide"		"170"
 		"text_center"	"1"
-		
+
 		"max_text_height"	"90"
 		"padding_height"	"40"
 		"resize_to_text"	"1"
 		"text_forcesize"	"2"
-		
+
 		"itemmodelpanel"
 		{
 			"fieldName"		"itemmodelpanel"
 			"use_item_rendertarget" "1"
 			"useparentbg"		"1"
 		}
-		
+
 		"ItemLabel"
-		{	
+		{
 			"ControlName"	"Label"
 			"fieldName"		"ItemLabel"
 			"font"			"DefaultSmall"
@@ -422,7 +522,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 		}
-		
+
 		"attriblabel"
 		{
 			"ControlName"	"CExLabel"
@@ -442,5 +542,5 @@
 			"fgcolor"		"235 226 202 255"
 			"centerwrap"	"1"
 		}
-	}	
+	}
 }
