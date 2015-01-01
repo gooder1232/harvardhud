@@ -15,7 +15,7 @@
         "visible"	"0"			     				//"1" to enable
 		"labelText"		"9"
 		"font"			"Crosshairs40"
-		"fgcolor"		"255 255 255 255"
+		"fgcolor"		"0 0 0 255"
 	}
 	
 	
@@ -1593,9 +1593,11 @@
 		"wide"	"200"
 		"tall"	"480"
 		
-		"blue_active_xpos"			"36"
+		//"blue_active_xpos"			"36"
+		"blue_active_xpos"			"35"
 	
-		"red_active_xpos"			"118"
+		//"red_active_xpos"			"118"
+		"red_active_xpos"			"122"
 	}	
 
 	HudItemEffectMeter
@@ -2022,7 +2024,7 @@
 		"visible" "1"
 		"enabled" "1"
 		"xpos"	 "r580"	[$WIN32]
-		"ypos"	 "50"	[$WIN32]
+		"ypos"	 "30"	[$WIN32]
 		"wide"	 "580"
 		"tall"	 "468"
 

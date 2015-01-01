@@ -597,7 +597,7 @@
 		"ypos"			"c147"	[$WIN32]
 		"zpos"			"2"
 		"wide"			"600"
-		"tall"			"49"
+		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -964,7 +964,7 @@
 		"ypos"			"c146"
 		"zpos"			"3"
 		"wide"			"600"
-		"tall"			"49"
+		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"0"
 		"visible"		"1"
@@ -982,7 +982,7 @@
 			"font"			"FontBold20"
 			"labelText"		"K:"
 			"textAlignment"		"center"
-			"xpos"			"0"
+			"xpos"			"250"
 			"ypos"			"0"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"40"
@@ -1020,11 +1020,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_AssistsLabel"
 			"textAlignment"		"east"
-			"xpos"			"140"
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"0"
+			"ypos"			"5"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1039,11 +1039,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DestructionLabel"
 			"textAlignment"		"east"
-			"xpos"			"265"
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"100"
+			"ypos"			"5"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1055,14 +1055,14 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Kills"
-			"font"			"FontBold20"
+			"font"			"FontBold28"
 			"labelText"		"%kills%"
-			"textAlignment"		"west"
-			"xpos"			"40"
+			"textAlignment"		"east"
+			"xpos"			"235"
 			"ypos"			"0"	[$WIN32]
 			"zpos"			"3"
-			"wide"			"40"
-			"tall"			"49"
+			"wide"			"50"
+			"tall"			"50"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1074,20 +1074,39 @@
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"Deaths"
-			"font"			"FontBold20"
+			"font"			"FontBold28"
 			"labelText"		"%deaths%"
 			"textAlignment"		"west"
-			"xpos"			"120"
+			"xpos"			"315"
 			"ypos"			"0"	[$WIN32]
 			"zpos"			"3"
-			"wide"			"40"
-			"tall"			"49"
+			"wide"			"50"
+			"tall"			"50"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
 			"fgcolor"	"hudred"
 			"fgcolor_override"	"hudred"
+		}	
+		"Colon"
+		{
+			"ControlName"		"CExLabel"
+			"fieldName"		"Colon"
+			"font"			"FontBold20"
+			"labelText"		":"
+			"textAlignment"		"center"
+			"xpos"			"290"
+			"ypos"			"0"	[$WIN32]
+			"zpos"			"3"
+			"wide"			"20"
+			"tall"			"46"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"fgcolor"	"hudwhite"
+			"fgcolor_override"	"hudwhite"
 		}	
 		"GameType"
 		{
@@ -1115,11 +1134,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%assists%"
 			"textAlignment"		"west"
-			"xpos"			"240"
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"100"
+			"ypos"			"5"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1134,11 +1153,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%destruction%"
 			"textAlignment"		"west"
-			"xpos"			"365"
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"200"
+			"ypos"			"5"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1153,11 +1172,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_CapturesLabel"
 			"textAlignment"		"east"
-			"xpos"			"140"	[$WIN32]
-			"ypos"			"20"	[$WIN32]
+			"xpos"			"0"	[$WIN32]
+			"ypos"			"17"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1172,11 +1191,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DefensesLabel"
 			"textAlignment"		"east"
-			"xpos"			"140"	[$WIN32]
-			"ypos"			"30"	[$WIN32]
+			"xpos"			"425"	[$WIN32]
+			"ypos"			"28"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1191,11 +1210,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_DominationLabel"
 			"textAlignment"		"east"
-			"xpos"			"265"	[$WIN32]
-			"ypos"			"10"	[$WIN32]
+			"xpos"			"100"	[$WIN32]
+			"ypos"			"17"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1210,11 +1229,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_RevengeLabel"
 			"textAlignment"		"east"
-			"xpos"			"265"	[$WIN32]
-			"ypos"			"20"	[$WIN32]
+			"xpos"			"100"	[$WIN32]
+			"ypos"			"28"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1229,11 +1248,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%captures%"
 			"textAlignment"		"west"
-			"xpos"			"240"	[$WIN32]
-			"ypos"			"20"	[$WIN32]
+			"xpos"			"100"	[$WIN32]
+			"ypos"			"17"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1248,11 +1267,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%defenses%"
 			"textAlignment"		"west"
-			"xpos"			"240"	[$WIN32]
-			"ypos"			"30"	[$WIN32]
+			"xpos"			"525"	[$WIN32]
+			"ypos"			"28"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1267,11 +1286,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%dominations%"
 			"textAlignment"		"west"
-			"xpos"			"365"	[$WIN32]
-			"ypos"			"10"	[$WIN32]
+			"xpos"			"200"	[$WIN32]
+			"ypos"			"17"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1286,11 +1305,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%Revenge%"
 			"textAlignment"		"west"
-			"xpos"			"365"	[$WIN32]
-			"ypos"			"20"	[$WIN32]
+			"xpos"			"200"	[$WIN32]
+			"ypos"			"28"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1305,11 +1324,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_HealingLabel"
 			"textAlignment"		"east"
-			"xpos"			"380"	[$WIN32]
-			"ypos"			"30"	[$WIN32]
+			"xpos"			"425"	[$WIN32]
+			"ypos"			"5"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"	[$WIN32]
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1324,11 +1343,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_InvulnLabel"
 			"textAlignment"		"east"
-			"xpos"			"380"	[$WIN32]
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"325"	[$WIN32]
+			"ypos"			"5"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1343,11 +1362,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_TeleportsLabel"
 			"textAlignment"		"east"
-			"xpos"			"380"	[$WIN32]
-			"ypos"			"20"	[$WIN32]
+			"xpos"			"325"	[$WIN32]
+			"ypos"			"17"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"	[$WIN32]
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1362,11 +1381,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_HeadshotsLabel"
 			"textAlignment"		"east"
-			"xpos"			"380"	[$WIN32]
-			"ypos"			"10"	[$WIN32]
+			"xpos"			"325"	[$WIN32]
+			"ypos"			"28"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"	[$WIN32]
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1381,11 +1400,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%healing%"
 			"textAlignment"		"west"
-			"xpos"			"480"	[$WIN32]
-			"ypos"			"30"	[$WIN32]
+			"xpos"			"525"	[$WIN32]
+			"ypos"			"5"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1400,11 +1419,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%invulns%"
 			"textAlignment"		"west"
-			"xpos"			"480"	[$WIN32]
-			"ypos"			"0"	[$WIN32]
+			"xpos"			"425"	[$WIN32]
+			"ypos"			"5"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1419,11 +1438,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%teleports%"
 			"textAlignment"		"west"
-			"xpos"			"480"	[$WIN32]
-			"ypos"			"20"	[$WIN32]
+			"xpos"			"425"	[$WIN32]
+			"ypos"			"17"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1438,11 +1457,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%headshots%"
 			"textAlignment"		"west"
-			"xpos"			"480"	[$WIN32]
-			"ypos"			"10"	[$WIN32]
+			"xpos"			"425"	[$WIN32]
+			"ypos"			"28"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1457,11 +1476,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_ScoreBoard_BackstabsLabel"
 			"textAlignment"		"east"
-			"xpos"			"265"	[$WIN32]
-			"ypos"			"30"	[$WIN32]
+			"xpos"			"425"	[$WIN32]
+			"ypos"			"17"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1476,11 +1495,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%backstabs%"
 			"textAlignment"		"west"		[$WIN32]
-			"xpos"			"365"	[$WIN32]
-			"ypos"			"30"	[$WIN32]
+			"xpos"			"525"	[$WIN32]
+			"ypos"			"17"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1570,11 +1589,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"#TF_Scoreboard_Damage"
 			"textAlignment"	"east"
-			"xpos"			"140"	[$WIN32]
-			"ypos"			"10"	[$WIN32]
+			"xpos"			"0"	[$WIN32]
+			"ypos"			"28"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"95"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -1589,11 +1608,11 @@
 			"font"			"ScoreboardVerySmall"
 			"labelText"		"%damage%"
 			"textAlignment"	"west"		[$WIN32]
-			"xpos"			"240"	[$WIN32]
-			"ypos"			"10"	[$WIN32]
+			"xpos"			"100"	[$WIN32]
+			"ypos"			"28"	[$WIN32]
 			"zpos"			"3"
 			"wide"			"35"
-			"tall"			"20"
+			"tall"			"16"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"

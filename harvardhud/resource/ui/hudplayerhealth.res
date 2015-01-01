@@ -14,7 +14,7 @@
 		"enabled"		"1"
 		"HealthBonusPosAdj"	"35"
 		"HealthDeathWarning"	"0.49"
-		"HealthDeathWarningColor"	"255 0 0 255"
+		"HealthDeathWarningColor"	"hudred"
 	}
 	"PlayerStatusHealthImage"
 	{
@@ -79,6 +79,27 @@
 		"font"			"FontBold48"
 		"font_minmode"	"FontBold36"
 		"fgcolor"		"healthnormal"
+	}
+	"PlayerStatusHealthValueShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValueShadow"
+		"xpos"			"c-169"
+		"xpos_minmode"		"45"
+		"ypos"			"r149"	[$WIN32]
+		"ypos_minmode"		"r34"
+		"zpos"			"4"
+		"wide"			"70"
+		"tall"			"48"
+		"tall_minmode"		"35"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%Health%"
+		"textAlignment"	"center"
+		"textAlignment_minmode"	"east"
+		"font"			"FontBold48"
+		"font_minmode"	"FontBold36"
+		"fgcolor"		"10 10 10 255"
 	}
 	"HealthNormal"
 	{

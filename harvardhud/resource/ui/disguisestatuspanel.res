@@ -1,4 +1,4 @@
-w"Resource/UI/ItemModelPanel.res"
+"Resource/UI/ItemModelPanel.res"
 {
 	"itemmodelpanel"
 	{
@@ -124,5 +124,4 @@ w"Resource/UI/ItemModelPanel.res"
 		"HealthDeathWarningColor"	"HUDDeathWarning"
 		"TextColor"		"HudOffWhite"
 	}	
-	
 }
