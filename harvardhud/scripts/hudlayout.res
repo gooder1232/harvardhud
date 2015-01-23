@@ -19,7 +19,7 @@
 	}
 	
 	
-	
+
 	
 	
 	////Non-Flashing, Non-Outlined, White, Crosshairs
@@ -78,16 +78,17 @@
 	{
 		"controlName"	"CExLabel"
 		"fieldName"	 	"xHairCircle"
-		"textAlignment"	"center"
-		"xpos"			"c-26"
-		"ypos"			"c-22"
-		"zpos"			"-2"
-		"wide"			"53"
-		"tall"			"50"
-        "enabled"	"1"
-        "visible"	"0"			     				//"1" to enable
+		"visible"		"0"
+		"enabled"		"1"
+		"zpos"			"2"
+		"xpos"			"c-100"
+		"ypos"			"c-96"
+		"wide"			"200"
+		"tall"			"200"
+		//"font"			"CrosshairsOutline34"
+		"font"			"RaysCrosshairs34"
 		"labelText"		"9"
-		"font"			"Crosshairs38"
+		"textAlignment"	"center"	
 		"fgcolor"		"255 255 255 255"
 	}
 	
@@ -204,10 +205,27 @@
 		"wide"			"49"
 		"tall"			"49"
         "enabled"	"1"
-        "visible"	"0"			     				//"1" to enable
+        "visible"	"1"			     				//"1" to enable
 		"labelText"		"Z"
 		"font"			"CrossHairKonrWings"
 		"fgcolor"		"255 255 255 255"
+	}
+	
+    "SeekersCrosshair"
+    {
+		"controlName"                           "CExLabel"
+        "fieldName"                                     "SeekersCrosshair"
+        "visible"                                       "0"
+        "enabled"                                       "1"
+        "zpos"                                          "1"
+        "xpos"                                          "c-27"
+        "ypos"                                          "c-25"
+        "wide"                                          "50"
+        "tall"                                          "51"
+        "font"                                          "seeker11" //optional : seeker11outline
+        "labelText"                                     "X"
+        "textAlignment"                                 "center"
+        "fgcolor"                                       "255 255 255 255"
 	}
 	
 	
@@ -1597,7 +1615,7 @@
 		"blue_active_xpos"			"35"
 	
 		//"red_active_xpos"			"118"
-		"red_active_xpos"			"122"
+		"red_active_xpos"			"125"
 	}	
 
 	HudItemEffectMeter

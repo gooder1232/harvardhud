@@ -1067,8 +1067,8 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"	"hudgreen"
-			"fgcolor_override"	"hudgreen"
+			"fgcolor"	"hudwhite"
+			"fgcolor_override"	"hudwhite"
 		}						
 		"Deaths"
 		{
@@ -1086,8 +1086,8 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor"	"hudred"
-			"fgcolor_override"	"hudred"
+			"fgcolor"	"hudwhite"
+			"fgcolor_override"	"hudwhite"
 		}	
 		"Colon"
 		{

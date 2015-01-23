@@ -64,11 +64,12 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
 		"xpos"			"c-170"
-		"xpos_minmode"		"44"
+		"xpos_minmode"		"9999"
 		"ypos"			"r150"	[$WIN32]
-		"ypos_minmode"		"r35"
+		"ypos_minmode"		"9999"
 		"zpos"			"5"
 		"wide"			"70"
+		"wide_minmode"  "100"
 		"tall"			"48"
 		"tall_minmode"		"35"
 		"visible"		"1"
@@ -85,11 +86,12 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueShadow"
 		"xpos"			"c-169"
-		"xpos_minmode"		"45"
+		"xpos_minmode"		"44"
 		"ypos"			"r149"	[$WIN32]
-		"ypos_minmode"		"r34"
+		"ypos_minmode"		"r35"
 		"zpos"			"4"
 		"wide"			"70"
+		"wide_minmode"  "100"
 		"tall"			"48"
 		"tall_minmode"		"35"
 		"visible"		"1"
@@ -100,6 +102,7 @@
 		"font"			"FontBold48"
 		"font_minmode"	"FontBold36"
 		"fgcolor"		"10 10 10 255"
+		"fgcolor_minmode" "healthnormal2"
 	}
 	"HealthNormal"
 	{

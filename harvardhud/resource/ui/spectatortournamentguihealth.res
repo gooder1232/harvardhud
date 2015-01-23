@@ -61,6 +61,21 @@
 		"fieldName"		"PlayerStatusHealthValue"
 		"xpos"			"0"
 		"ypos"			"0"
+		"zpos"			"-7"
+		"wide"			"32"
+		"tall"			"20"
+		"visible"		"0"
+		"enabled"		"0"
+		"font"			"FontBold16"
+		"textAlignment"	"center"
+		"fgcolor_override"	"healthwhite"
+	}
+	"PlayerStatusHealthValueID"
+	{
+		"ControlName"	"Label"
+		"fieldName"		"PlayerStatusHealthValueID"
+		"xpos"			"0"
+		"ypos"			"0"
 		"zpos"			"7"
 		"wide"			"32"
 		"tall"			"20"
@@ -69,7 +84,7 @@
 		"font"			"FontBold16"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"
-		"fgcolor_override"	"healthwhite"
+		"fgcolor_override"	"healthnormal2"
 	}
 	"HealthNormal"
 	{

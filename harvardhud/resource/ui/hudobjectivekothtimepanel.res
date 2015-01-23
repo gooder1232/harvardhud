@@ -85,6 +85,6 @@
 		"tall"				"24"
 		"visible"			"0"
 		"enabled"			"1"
-		"fillcolor"				"hudgrey"	
+		"border"				"TBorder"	
 	}
 }

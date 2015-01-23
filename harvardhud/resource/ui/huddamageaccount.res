@@ -6,11 +6,11 @@
 		"text_x"				"0"
 		"text_y"				"0"
 		"delta_item_end_y"		"0"
-		"PositiveColor"			"hudgreen"
+		"PositiveColor"			"hudblue"
 		"NegativeColor"			"damageaccount"
 		"delta_lifetime"		"1.5"
-		"delta_item_font"		"FontBold28"
-		"delta_item_font_big"	"FontBold32"
+		"delta_item_font"		"FontBold28Outline"
+		"delta_item_font_big"	"FontBold32Outline"
 	}
 	
 	"DamageAccountValue"

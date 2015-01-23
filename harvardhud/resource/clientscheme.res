@@ -20,20 +20,23 @@ Scheme
 	{
 		//HEALTH COLORS
 		"healthnormal"		"255 255 255 255"
+		"healthnormal2"		"255 255 255 255"
+		"healthbuff"		"255 255 255 255"
+		"healthhurt"		"255 255 255 255"
 
 		//AMMO COLORS
 		"ammonormal"		"255 255 255 255"
-		"ammoinclip"		"255 204 255 255"
-		"ammoinreserve"		"255 56 255 255"
-		"ammoincliplow"		"255 128 255 255"
-		"ammoinreservelow"	"184 77 255 255"
+		"ammoinclip"		"255 255 255 255"
+		"ammoinreserve"		"255 255 255 255"
+		"ammoincliplow"		"255 255 255 255"
+		"ammoinreservelow"	"255 255 255 255"
 
 		//DAMAGE NUMBERS
 		"damageaccount"		"255 255 0 255"
 		"lastdamageinfo"	"255 255 0 255"
 
 		//UBER COLORS
-		"uberlabelcolor"	"255 255 255 255"
+		"uberlabelcolor"	"130 130 130 255"
 		"uberchargemeter"	"255 255 255 255"
 
 		//CHARGE METERS
@@ -3899,6 +3902,43 @@ Scheme
 				"antialias"	"1"
 			}
 		}
+		
+        "seeker11"
+        {
+			"1"
+			{
+				"name"                  "tf2crossRegular"
+                "tall"                  "11"
+                "weight"                "0"
+                "antialias"             "1"
+                "additive"              "0"
+                "outline"               "0"
+			}
+		}
+		
+		"seeker11outline"
+        {
+			"1"
+            {
+				"name"                  "tf2crossRegular"
+				"tall"                  "11"
+                "weight"                "0"
+                "antialias"             "1"
+                "additive"              "0"
+                "outline"               "1"
+            }
+		}
+		
+		"RaysCrosshairs34"
+		{
+			"1"
+			{
+			"name"			"Crosshairs"
+			"tall" 			"34"
+			"weight" 		"0"
+			"antialias" 	"1"
+			}
+		}
 	}
 
 	//
@@ -5985,5 +6025,10 @@ Scheme
 			"font" "resource/fonts/Blocks.ttf"
 			"name" "Blocks"
 		}
+        "15"
+        {
+			"font" "resource/fonts/tf2cross.ttf"
+            "name" "tf2crossRegular"
+        }
 	}
 }

@@ -507,12 +507,12 @@
 		{
 			"ControlName"	"Label"
 			"fieldName"		"ItemLabel"
-			"font"			"DefaultSmall"
+			"font"			"FontBold12"
 			"xpos"			"10"
 			"ypos"			"3"
 			"zpos"			"1"
 			"wide"			"270"
-			"tall"			"9"
+			"tall"			"12"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -521,6 +521,7 @@
 			"textAlignment"	"Left"
 			"dulltext"		"0"
 			"brighttext"	"0"
+			"fgcolor_override" "hudwhite"
 		}
 
 		"attriblabel"
@@ -535,8 +536,8 @@
 			"tall"			"60"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
+			"visible"		"0"
+			"enabled"		"0"
 			"labelText"		"%attriblist%"
 			"textAlignment"	"south"
 			"fgcolor"		"235 226 202 255"

@@ -58,16 +58,19 @@
 	{
 		"label" "Ç"
 		"command" "engine Home"
+		"tooltip" "Favorite Server"
 	}
 	"ToggleScoreboard"
 	{
 		"label" "U"
 		"command" "engine toggle cl_hud_minmode"
+		"tooltip" "Minmode Toggle"
 	}
 	"DEMOUI"
 	{
 		"label" "ë"
 		"command" "engine demoui"
+		"tooltip" "Demoui"
 	}
 	"VRModeButton"
 	{
