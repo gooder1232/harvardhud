@@ -205,7 +205,7 @@
 		"wide"			"49"
 		"tall"			"49"
         "enabled"	"1"
-        "visible"	"1"			     				//"1" to enable
+        "visible"	"0"			     				//"1" to enable
 		"labelText"		"Z"
 		"font"			"CrossHairKonrWings"
 		"fgcolor"		"255 255 255 255"
